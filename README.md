@@ -1,4 +1,4 @@
-#Array Methods?
+#Array Methods
 
 ###Overview
 This lesson will give a deeper dive on why arrays are valuable and some useful methods you can use when working with arrays.
