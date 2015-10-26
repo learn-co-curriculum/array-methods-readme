@@ -1,4 +1,4 @@
-#Array Methods
+#Array Methods?
 
 ###Overview
 This lesson will give a deeper dive on why arrays are valuable and some useful methods you can use when working with arrays.
@@ -31,7 +31,7 @@ famous_wizards = ["Dumbledore", "Gandalf", "Merlin"]
 famous_wizards.reverse
   => ["Merlin", "Gandalf", "Dumbledore"]
 ```
-#### The `.include?()` Method
+#### The `.include?` Method
 This method will return a boolean of whether or not the array contains (or ​*includes*​) the element submitted to it inside the parentheses:
 
 ```ruby
@@ -44,7 +44,30 @@ famous_cats.include?("Maru")
 Since we are just returning `true` or `false`, the return value remains unchanged.
 
 #### The `.first` Method
+This method will return the first element of the array, as its name suggests. Again, it does not change the return value of the original array.
+
+```ruby
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.first
+  => "lil' bub"
+```
 
 #### The `.last` Method
+This method will return the last element of the array, as its name suggests. Again, it does not change the return value of the original array.
+
+```ruby
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.last
+  => "Maru"
+```
+
 
 #### The `.size` Method
+This method will return the number of elements in the array.
+
+```ruby
+famous_cats = ["lil' bub", "grumpy cat", "Maru"]
+famous_cats.size
+  => 3
+```
+Even though arrays start with a 0 `index`, this method returns the actual number of elements, starting from 1.
