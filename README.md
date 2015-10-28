@@ -24,6 +24,8 @@ famous_cats.sort
 ```
 One thing to be aware of is that the return value of `famous_cats` remains unchanged after using the `sort` method on it. Meaning if you call `famous_cats` again after the sort, it will still return `["lil' bub", "grumpy cat", "Maru"]`, not the previously sorted array.
 
+This is because `sort` returns a new array, we generally store it into another variable. So we would do `sorted_cats = famous_cats.sort`. Now we have two copies of the array. One unsorted (`famous_cats`) and one sorted (`sorted_cats`). If you don't care about the sorted version of the array you can call `sort!`. This will sort the existing array without requiring you to save the return into a new variable. You'll notice the `!`. It's a ruby convention that a method with the `!` will do the operation in place. It will modify the receiver of the method (AKA the thing to the left of the dot).
+
 #### The `.reverse` Method
 This method reverses an array.
 ```ruby  
@@ -31,6 +33,9 @@ famous_wizards = ["Dumbledore", "Gandalf", "Merlin"]
 famous_wizards.reverse
   => ["Merlin", "Gandalf", "Dumbledore"]
 ```
+
+Similarly to `sort!`, you can call `reverse!`, again modifying the receiver of the method in place.
+
 #### The `.include?` Method
 This method will return a boolean of whether or not the array contains (or ​*includes*​) the element submitted to it inside the parentheses:
 
@@ -41,7 +46,7 @@ famous_cats.include?("Garfield")
 famous_cats.include?("Maru")
   => true
 ```
-Since we are just returning `true` or `false`, the return value remains unchanged.
+Since we are just returning `true` or `false`, the receiver of the method, `famous_cats`, remains unchanged.
 
 #### The `.first` Method
 This method will return the first element of the array, as its name suggests. Again, it does not change the return value of the original array.
@@ -53,7 +58,7 @@ famous_cats.first
 ```
 
 #### The `.last` Method
-This method will return the last element of the array, as its name suggests. Again, it does not change the return value of the original array.
+This method will return the last element of the array, as its name suggests. Again, it does not change the original array.
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -71,3 +76,6 @@ famous_cats.size
   => 3
 ```
 Even though arrays start with a 0 `index`, this method returns the actual number of elements, starting from 1.
+
+***Note***
+Be aware that all of the methods we have covered in this reading are case sensitive. For example, `reverse` not `Reverse`.
