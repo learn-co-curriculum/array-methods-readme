@@ -79,3 +79,5 @@ Even though arrays start with a 0 `index`, this method returns the actual number
 
 ***Note***
 Be aware that all of the methods we have covered in this reading are case sensitive. For example, `reverse` not `Reverse`.
+
+<a href='https://learn.co/lessons/array-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
