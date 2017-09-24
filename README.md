@@ -12,7 +12,7 @@ This lesson will present some useful methods you can use when working with array
 ### Working With Arrays
 
 #### The `.sort` Method
-This method rearranges the contents of the array by, well, sorting them. For strings, this means alphabetically, for numerical values, this means from smallest number to highest number.
+This method rearranges the contents of the array by sorting them. For strings, this means alphabetically, for numerical values, this means from smallest number to highest number.
 
 **Advanced:** ​*The*​ `.sort` ​*method works by implicitly comparing elements with the "spaceship" operator*​ `<=>` ​*(because it looks like a flying saucer, swoosh!) and moving them accordingly.*​
 
@@ -78,6 +78,6 @@ Even though arrays start with a 0 `index`, this method returns the actual number
 
 **Note**: Be aware that all of the methods we have covered in this reading are case sensitive. For example, `reverse` not `Reverse`.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/array-methods-readme' title='Array Methods'>Array Methods</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/array-methods-readme'>Arrays and Methods</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/array-methods-readme'>Array Methods</a> on Learn.co and start learning to code for free.</p>
