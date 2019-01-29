@@ -1,9 +1,9 @@
-#Array Methods
+# Array Methods
 
-###Overview
+### Overview
 This lesson will present some useful methods you can use when working with arrays.
 
-###Objectives
+### Objectives
 1. Sort arrays with the sort method
 2. Find the first and last elements of an array
 3. Find the size of an array
